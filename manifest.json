@@ -1,0 +1,16 @@
+{
+	"name": "GA Tracking Sniffer",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "Plugin to track GA Tracker calls",
+	  "background": {
+    "scripts": ["background.js"],
+		"matches": ["*://*ving.se/*"]
+  },
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+        "tabs",
+				"<all_urls>"
+    ]
+}
